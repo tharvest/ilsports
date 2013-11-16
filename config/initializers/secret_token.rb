@@ -17,3 +17,4 @@ def secure_token
 		token
 	end
 end
+Ilbdmt::Application.config.secret_token = secure_token 
