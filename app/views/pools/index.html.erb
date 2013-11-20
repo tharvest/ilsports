@@ -1,0 +1,35 @@
+<h1>Listing pools</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Game</th>
+      <th>Match</th>
+      <th>Create time</th>
+      <th>Sell statu</th>
+      <th>Match result</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pools.each do |pool| %>
+      <tr>
+        <td><%= pool.game_id %></td>
+        <td><%= pool.match_id %></td>
+        <td><%= pool.create_time %></td>
+        <td><%= pool.sell_statu %></td>
+        <td><%= pool.match_result %></td>
+        <td><%= link_to 'Show', pool %></td>
+        <td><%= link_to 'Edit', edit_pool_path(pool) %></td>
+        <td><%= link_to 'Destroy', pool, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pool', new_pool_path %>

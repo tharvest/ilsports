@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Game:</strong>
+  <%= @pool.game_id %>
+</p>
+
+<p>
+  <strong>Match:</strong>
+  <%= @pool.match_id %>
+</p>
+
+<p>
+  <strong>Create time:</strong>
+  <%= @pool.create_time %>
+</p>
+
+<p>
+  <strong>Sell statu:</strong>
+  <%= @pool.sell_statu %>
+</p>
+
+<p>
+  <strong>Match result:</strong>
+  <%= @pool.match_result %>
+</p>
+
+<%= link_to 'Edit', edit_pool_path(@pool) %> |
+<%= link_to 'Back', pools_path %>

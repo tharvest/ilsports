@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  game_id: 1
+  match_id: MyString
+  create_time: 2013-11-20 22:17:19
+  sell_statu: 1
+  match_result: 1
+
+two:
+  game_id: 1
+  match_id: MyString
+  create_time: 2013-11-20 22:17:19
+  sell_statu: 1
+  match_result: 1
