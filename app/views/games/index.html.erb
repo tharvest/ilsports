@@ -1,10 +1,10 @@
-<h1>Listing games</h1>
+<h1>游戏列表</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Game</th>
-      <th>Game name</th>
+      <th>游戏编号</th>
+      <th>游戏名称</th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= game.game_id %></td>
         <td><%= game.game_name %></td>
-        <td><%= link_to 'Show', game %></td>
-        <td><%= link_to 'Edit', edit_game_path(game) %></td>
-        <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '查看', game %></td>
+        <td><%= link_to '编辑', edit_game_path(game) %></td>
+        <td><%= link_to '删除', game, method: :delete, data: { confirm: '确定要删除该条记录?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Game', new_game_path %>
+<%= link_to '新建游戏', new_game_path %>

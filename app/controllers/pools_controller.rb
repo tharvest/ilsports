@@ -1,5 +1,5 @@
 class PoolsController < ApplicationController
-  before_action :set_pool, only: [:show, :edit, :update, :destroy]
+	before_action :set_pool, only: [:show, :edit, :update, :destroy]
 
   # GET /pools
   # GET /pools.json

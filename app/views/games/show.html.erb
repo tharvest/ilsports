@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Game:</strong>
+  <strong>游戏编号:</strong>
   <%= @game.game_id %>
 </p>
 
 <p>
-  <strong>Game name:</strong>
+  <strong>游戏名称:</strong>
   <%= @game.game_name %>
 </p>
 
-<%= link_to 'Edit', edit_game_path(@game) %> |
-<%= link_to 'Back', games_path %>
+<%= link_to '修改', edit_game_path(@game) %> |
+<%= link_to '返回', games_path %>

@@ -1,14 +1,13 @@
-<h1>Listing matches</h1>
+<h1>赛事信息</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Match</th>
-      <th>Player a</th>
-      <th>Player b</th>
-      <th>Start time</th>
-      <th>End time</th>
-      <th>Operator</th>
+      <th>赛事编号</th>
+      <th>选手A</th>
+      <th>选手B</th>
+      <th>开始时间</th>
+      <th>结束时间</th>
       <th></th>
       <th></th>
       <th></th>
@@ -21,12 +20,11 @@
         <td><%= match.match_id %></td>
         <td><%= match.player_a %></td>
         <td><%= match.player_b %></td>
-        <td><%= match.start_time %></td>
-        <td><%= match.end_time %></td>
-        <td><%= match.operator %></td>
-        <td><%= link_to 'Show', match %></td>
-        <td><%= link_to 'Edit', edit_match_path(match) %></td>
-        <td><%= link_to 'Destroy', match, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= match.start_time.strftime("%Y年%m月%d日%H时%M分") %></td>
+        <td><%= match.end_time.strftime("%Y年%m月%d日%H时%M分") %></td>
+        <td><%= link_to '详情', match %></td>
+        <td><%= link_to '修改', edit_match_path(match) %></td>
+        <td><%= link_to '删除', match, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Match', new_match_path %>
+<%= link_to '新加赛事', new_match_path %>

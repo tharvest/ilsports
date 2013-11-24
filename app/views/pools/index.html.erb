@@ -1,13 +1,13 @@
-<h1>Listing pools</h1>
+<h1>奖池列表</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Game</th>
-      <th>Match</th>
-      <th>Create time</th>
-      <th>Sell statu</th>
-      <th>Match result</th>
+      <th>游戏名称</th>
+      <th>赛事编号</th>
+      <th>创建时间</th>
+      <th>奖池状态</th>
+      <th>赛果</th>
       <th></th>
       <th></th>
       <th></th>
@@ -19,12 +19,12 @@
       <tr>
         <td><%= pool.game_id %></td>
         <td><%= pool.match_id %></td>
-        <td><%= pool.create_time %></td>
+        <td><%= pool.create_time.strftime("%Y年%m月%d日 %H:%M:%S") %></td>
         <td><%= pool.sell_statu %></td>
         <td><%= pool.match_result %></td>
-        <td><%= link_to 'Show', pool %></td>
-        <td><%= link_to 'Edit', edit_pool_path(pool) %></td>
-        <td><%= link_to 'Destroy', pool, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '查看', pool %></td>
+        <td><%= link_to '编辑', edit_pool_path(pool) %></td>
+        <td><%= link_to '删除', pool, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Pool', new_pool_path %>
+<%= link_to '新加奖池', new_pool_path %>
