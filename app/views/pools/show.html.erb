@@ -1,29 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Game:</strong>
+  <strong>游戏:</strong>
   <%= @pool.game_id %>
 </p>
 
 <p>
-  <strong>Match:</strong>
+  <strong>赛事:</strong>
   <%= @pool.match_id %>
 </p>
 
 <p>
-  <strong>Create time:</strong>
-  <%= @pool.create_time %>
+  <strong>创建时间:</strong>
+  <%= @pool.create_time.strftime('%Y年%m月%d日%H:%M:%S') %>
 </p>
 
 <p>
-  <strong>Sell statu:</strong>
-  <%= @pool.sell_statu %>
+  <strong>销售状态:</strong>
+  <%= @pool.sell_status %>
 </p>
 
 <p>
-  <strong>Match result:</strong>
+  <strong>赛果:</strong>
   <%= @pool.match_result %>
 </p>
 
-<%= link_to 'Edit', edit_pool_path(@pool) %> |
-<%= link_to 'Back', pools_path %>
+<%= link_to '编辑', edit_pool_path(@pool) %> |
+<%= link_to '返回', pools_path %>

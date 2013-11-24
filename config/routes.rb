@@ -1,4 +1,5 @@
 Ilbdmt::Application.routes.draw do
+  get "sell_tickets/home"
   resources :pools
 
   resources :games
@@ -11,6 +12,12 @@ Ilbdmt::Application.routes.draw do
 	match '/help',		to: 'static_pages#help',		via: 'get'
 	match '/about',		to: 'static_pages#about',		via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
+	
+	match '/sell',			to: 'sell_tickets#home',	via: 'get'
+	match '/game',			to: 'sell_tickets#game',	via: 'get'
+	match '/score',			to: 'sell_tickets#score',	via: 'get'
+	match '/total',			to: 'sell_tickets#total',	via: 'get'
+	match '/hfad',			to: 'sell_tickets#hfad',	via: 'get'
 
 	# The priority is based upon order of creation:
   # first created -> highest priority.

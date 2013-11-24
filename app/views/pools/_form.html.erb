@@ -12,26 +12,28 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :game_id %><br>
-    <%= f.number_field :game_id %>
+    <%= f.label :'选择游戏' %><br>
+		<%= f.select(:game_id, options_from_collection_for_select(Game.all, :id, :game_name)) %>
+    <%#= f.number_field :game_id %>
   </div>
   <div class="field">
-    <%= f.label :match_id %><br>
-    <%= f.text_field :match_id %>
+    <%= f.label :'选择赛事' %><br>
+		<%= f.select(:match_id, options_from_collection_for_select(Match.all, :id, :match_no)) %>
+    <%#= f.text_field :match_id %>
   </div>
   <div class="field">
-    <%= f.label :create_time %><br>
-    <%= f.datetime_select :create_time %>
+    <%#= f.label :create_time %><br>
+    <%#= f.datetime_select :create_time %>
   </div>
   <div class="field">
-    <%= f.label :sell_statu %><br>
-    <%= f.number_field :sell_statu %>
+    <%= f.label :'销售状态' %><br>
+    <%= select_tag(:sell_status, options_for_select([['初始', 0], ['开始销售', 1], ['暂停销售', 2], ['停止销售', 3], ['退款']], 0 )) %>
   </div>
   <div class="field">
-    <%= f.label :match_result %><br>
+    <%= f.label :'赛果' %><br>
     <%= f.number_field :match_result %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit '提交'%>
   </div>
 <% end %>

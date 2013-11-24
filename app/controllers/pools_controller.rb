@@ -25,10 +25,10 @@ class PoolsController < ApplicationController
   # POST /pools.json
   def create
     @pool = Pool.new(pool_params)
-
+		@pool.create_time = Time.now
     respond_to do |format|
       if @pool.save
-        format.html { redirect_to @pool, notice: 'Pool was successfully created.' }
+        format.html { redirect_to @pool, notice: '奖池创建成功.' }
         format.json { render action: 'show', status: :created, location: @pool }
       else
         format.html { render action: 'new' }

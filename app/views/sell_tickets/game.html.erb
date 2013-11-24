@@ -1,0 +1,13 @@
+<h1><%= @game.game_name %>赛事列表</h1>
+<p>
+<ul>
+<% @pools.each do |pool| %>
+	<li>
+		<%match = Match.find pool.match_id %>
+		<%= match.match_no %> <%= match.player_a %> VS <%= match.player_b %>
+	</li>
+<% end %>
+</ul>
+						<%= link_to "返回",		sell_path %>
+</p>
+

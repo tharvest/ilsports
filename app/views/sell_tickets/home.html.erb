@@ -1,0 +1,15 @@
+<h1>我要购彩</h1>
+<p>
+<ul>
+	<% @games.each do |game| %>
+	<li>
+		<%= link_to game.game_name%>
+	</li>
+  <% end %>
+</ul>
+<%= form_tag("/game", method: "get") do %>
+  <%= label_tag(:id, "选择游戏:") %>
+	  <%= select_tag(:id, options_from_collection_for_select(Game.all, :id, :game_name)) %>
+		  <%= submit_tag("提交", class: "btn btn-large btn-primary") %>
+			<% end %>
+</p>

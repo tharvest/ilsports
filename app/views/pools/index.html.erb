@@ -17,10 +17,10 @@
   <tbody>
     <% @pools.each do |pool| %>
       <tr>
-        <td><%= pool.game_id %></td>
-        <td><%= pool.match_id %></td>
+        <td><%= Game.find(pool.game_id).game_name %></td>
+        <td><%= Match.find(pool.match_id).match_no %></td>
         <td><%= pool.create_time.strftime("%Y年%m月%d日 %H:%M:%S") %></td>
-        <td><%= pool.sell_statu %></td>
+        <td><%= pool.sell_status %></td>
         <td><%= pool.match_result %></td>
         <td><%= link_to '查看', pool %></td>
         <td><%= link_to '编辑', edit_pool_path(pool) %></td>

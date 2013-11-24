@@ -17,12 +17,12 @@
   <tbody>
     <% @matches.each do |match| %>
       <tr>
-        <td><%= match.match_id %></td>
+        <td><%= match.match_no %></td>
         <td><%= match.player_a %></td>
         <td><%= match.player_b %></td>
         <td><%= match.start_time.strftime("%Y年%m月%d日%H时%M分") %></td>
         <td><%= match.end_time.strftime("%Y年%m月%d日%H时%M分") %></td>
-        <td><%= link_to '详情', match %></td>
+        <td><%= link_to '查看', match %></td>
         <td><%= link_to '修改', edit_match_path(match) %></td>
         <td><%= link_to '删除', match, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

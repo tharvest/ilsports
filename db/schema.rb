@@ -11,17 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131120141719) do
+ActiveRecord::Schema.define(version: 20131124142038) do
 
   create_table "games", force: true do |t|
-    t.integer  "game_id"
+    t.integer  "game_no"
     t.string   "game_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "matches", force: true do |t|
-    t.string   "match_id"
+    t.string   "match_no"
     t.string   "player_a"
     t.string   "player_b"
     t.datetime "start_time"
@@ -32,13 +32,13 @@ ActiveRecord::Schema.define(version: 20131120141719) do
   end
 
   create_table "pools", force: true do |t|
-    t.integer  "game_id"
-    t.string   "match_id"
     t.datetime "create_time"
-    t.integer  "sell_statu"
     t.integer  "match_result"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "game_id"
+    t.integer  "match_id"
+    t.integer  "sell_status"
   end
 
 end

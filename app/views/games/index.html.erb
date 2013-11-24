@@ -14,7 +14,7 @@
   <tbody>
     <% @games.each do |game| %>
       <tr>
-        <td><%= game.game_id %></td>
+        <td><%= game.game_no %></td>
         <td><%= game.game_name %></td>
         <td><%= link_to '查看', game %></td>
         <td><%= link_to '编辑', edit_game_path(game) %></td>
