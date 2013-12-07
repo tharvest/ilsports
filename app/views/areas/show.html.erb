@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @area.id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @area.title %>
+</p>
+
+<p>
+  <strong>Pid:</strong>
+  <%= @area.pid %>
+</p>
+
+<%= link_to 'Edit', edit_area_path(@area) %> |
+<%= link_to 'Back', areas_path %>

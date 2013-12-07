@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>主题:</strong>
+  <%= @activity.title %>
+</p>
+
+<p>
+  <strong>开始时间:</strong>
+  <%= @activity.starttime %>
+</p>
+
+<p>
+  <strong>结束时间:</strong>
+  <%= @activity.endtime %>
+</p>
+
+<p>
+  <strong>限定人数:</strong>
+  <%= @activity.quota %>
+</p>
+
+<p>
+  <strong>已报人数:</strong>
+  <%= @activity.signed %>
+</p>
+
+<p>
+  <strong>活动地点:</strong>
+  <%= @activity.place %>
+</p>
+
+<p>
+  <strong>发起人:</strong>
+  <%= @activity.organizer %>
+</p>
+
+<p>
+  <strong>联系方式:</strong>
+  <%= @activity.contact %>
+</p>
+
+<p>
+  <strong>活动描述:</strong>
+  <%= @activity.description %>
+</p>
+
+<p>
+  <strong>其它:</strong>
+  <%= @activity.other %>
+</p>
+
+<%= link_to '编辑', edit_activity_path(@activity) %> |
+<%= link_to '返回', activities_path %>

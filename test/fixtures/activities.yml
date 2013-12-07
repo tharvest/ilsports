@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  starttime: 2013-12-07 11:45:28
+  endtime: 2013-12-07 11:45:28
+  quota: 1
+  signed: 1
+  place: MyString
+  organizer: MyString
+  contact: MyString
+  description: MyText
+  other: MyString
+
+two:
+  title: MyString
+  starttime: 2013-12-07 11:45:28
+  endtime: 2013-12-07 11:45:28
+  quota: 1
+  signed: 1
+  place: MyString
+  organizer: MyString
+  contact: MyString
+  description: MyText
+  other: MyString

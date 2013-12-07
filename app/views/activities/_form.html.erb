@@ -1,0 +1,57 @@
+<%= form_for(@activity) do |f| %>
+  <% if @activity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+
+      <ul>
+      <% @activity.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :'活动主题' %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :'开始时间' %><br>
+    <%= f.datetime_select :starttime %>
+  </div>
+  <div class="field">
+    <%= f.label :'结束时间' %><br>
+    <%= f.datetime_select :endtime %>
+  </div>
+  <div class="field">
+    <%= f.label :'限定人数' %><br>
+    <%= f.number_field :quota %>
+  </div>
+  <div class="field">
+    <%= f.label :'已报人数' %><br>
+    <%= f.number_field :signed %>
+  </div>
+  <div class="field">
+    <%= f.label :'活动地点' %><br>
+    <%= f.text_field :place %>
+  </div>
+  <div class="field">
+    <%= f.label :'发起人' %><br>
+    <%= f.text_field :organizer %>
+  </div>
+  <div class="field">
+    <%= f.label :'联系方式' %><br>
+    <%= f.text_field :contact %>
+  </div>
+  <div class="field">
+    <%= f.label :'活动描述' %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :'其它' %><br>
+    <%= f.text_field :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit '提交'%>
+  </div>
+<% end %>

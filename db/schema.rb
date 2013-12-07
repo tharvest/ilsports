@@ -11,7 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131124142038) do
+ActiveRecord::Schema.define(version: 20131207133651) do
+
+  create_table "activities", force: true do |t|
+    t.string   "title"
+    t.datetime "starttime"
+    t.datetime "endtime"
+    t.integer  "quota"
+    t.integer  "signed"
+    t.string   "place"
+    t.string   "organizer"
+    t.string   "contact"
+    t.text     "description"
+    t.string   "other"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "areas", force: true do |t|
+    t.string   "title"
+    t.integer  "pid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "games", force: true do |t|
     t.integer  "game_no"
@@ -40,5 +62,15 @@ ActiveRecord::Schema.define(version: 20131124142038) do
     t.integer  "match_id"
     t.integer  "sell_status"
   end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "password_digest"
+  end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
 
 end
