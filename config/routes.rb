@@ -14,6 +14,7 @@ Ilbdmt::Application.routes.draw do
 
   resources :matches
 
+	#root to: 'static_pages#page1'
 	root to: 'static_pages#home'
 	match '/signup/', to: 'users#new',						via: 'get'
 	match '/signin/', to: 'sessions#new',					via: 'get'
