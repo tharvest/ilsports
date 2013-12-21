@@ -1,58 +1,221 @@
 <% provide(:title, "主页") %>
-<div class="center hero-unit">
-	<h2>欢迎访问竞技体育，我爱精彩！</h2>
-	<p class="lead">你可以在这里体验体育游戏竞猜的乐趣！</p>
-	<%= link_to "立即加入", signup_path, class: "btn btn-large btn-primary" %>
-</div>
 <div class="row">
-	<div class="span4">
-		<h3>赛事信息</h3>
-		<p>This is not what you don't want. This is also what I want. This is just a demo.</p>
-		<p><%= link_to  "详细信息", matches_path, class: "btn" %>
-	</div>
-	<div class="span4">
-		<h3>赛事信息</h3>
-		<p>This is not what you don't want. This is also what I want. This is just a demo.</p>
-		<p></p>
-		<p><%= link_to  "详细信息", matches_path, class: "btn" %>
-	</div>
-	<div class="span4">
-		<h3>赛事信息</h3>
-		<p>This is not what you don't want. This is also what I want. This is just a demo.</p>
-		<p></p>
-		<p><%= link_to  "详细信息", matches_path, class: "btn" %>
+	<div class="span12">
+		<img src="http://img1.gtimg.com/sports/pics/hv1/244/105/1426/92752669.jpg" class="img-rounded">
 	</div>
 </div>
 <div class="row">
-<div>
-<dl>
-<dt><a href="http://ball.damai.cn/484.html" target="_blank"><img src="http://i.damai.cn/fp/site/mayball/images/0_05.jpg" width="221" height="147" /></a></dt>
-<dd><p>北京海淀体育馆羽毛球馆</p>
-<p><b>[海淀区]</b> 颐和园路12号海淀体育馆</p>
-<p>门市价：￥<s>60.00</s></p>
-<p>大麦价：￥<b>60.00</b></p></dd>
-<span><a href="http://ball.damai.cn/484.html" target="_blank">立即预订</a></span>
-</dl>
+	<div class="span12">
+		<ul class="nav nav-pills">
+			<li class="active">
+				<%= link_to "首页", root_path %>
+			</li>
+			<li>
+				<a href="#">羽毛球</a>
+			</li>
+			<li>
+				<a href="/infocenter/Search.aspx">网球</a>
+			</li>
+			<li>
+				<a href="/Channels/Competetion/Album.aspx">滑雪</a>
+			</li>
+			<li>
+				<a href="/infocenter/Search.aspx?word=.">足球</a>
+			</li>
+			<li>
+				<a href="/zt.aspx">篮球</a>
+			</li>
+			<li>
+				<a href="/Channels/Competetion/RaceList.aspx">乒乓球</a>
+			</li>
+			<li>
+				<a href="/Channels/Competetion/RaceList.aspx">跑步</a>
+			</li>
+			<li>
+				<a href="/Channels/Competetion/RaceList.aspx">K歌</a>
+			</li>
+			<li>
+				<a href="/Channels/Competetion/RaceList.aspx">其它</a>&nbsp;
+			</li>
+		</ul>
+	</div>
+	<!--div class="span12">
+		<legend>
+			<a href="/infocenter/Search.aspx">羽毛球</a>
+			<a href="/Channels/Competetion/Album.aspx">滑雪</a>
+			<a href="/infocenter/Search.aspx?word=.">足球</a>
+			<a href="/zt.aspx">篮球</a>
+			<a href="/Channels/Competetion/RaceList.aspx">乒乓球</a>
+			<a href="/Channels/Competetion/RaceList.aspx">跑步</a>
+			<a href="/Channels/Competetion/RaceList.aspx">K歌</a>
+			<a href="/Channels/Competetion/RaceList.aspx">其它</a>&nbsp;
+		</legend>
+	</div-->
 </div>
-<div>
-<dl>
-<dt><a href="http://ball.damai.cn/483.html" target="_blank"><img src="http://i.damai.cn/fp/site/mayball/images/t6.jpg" width="221" height="147" /></a></dt>
-<dd><p>北京万芳亭羽毛球馆</p>
-<p><b>[丰台区]</b>丰台区洋桥西里甲2号</p>
-<p>门市价：￥<s>30.00</s></p>
-<p>大麦价：￥<b>25.00</b></p></dd>
-<span><a href="http://ball.damai.cn/483.html" target="_blank">立即预订</a></span>
-</dl>
+<div class="row"><!-- left body-->
+	<div class="span8">
+		<div class="row">
+			<div class="span8">
+				<div class="navbar">
+					<div class="navbar-inner">
+						<a class="brand" href="#">热门活动</a>
+					</div>	
+				</div>
+				<div class="row">
+				<div class="span4">
+				<dl class="dl-horizontal">
+					<dt>
+						<a href="/blog/200006019.aspx" target="_blank"><img src="http://img.erun360.com/utility/uploads/2013-12-19/100000807_101515.jpg" width="200" height="200"></a>
+					</dt>
+					<dd>
+						<a href="/blog/200006019.aspx" target="_blank" class="title" title="第一次跑5KM必读"><p>第一次跑5KM必读<p></a>
+						<span>by：<a href="/user/100000807.aspx" target="_blank"  title="益跑天下">益跑天下</a></span>
+						<p>		要跑5千米，很令人兴奋也会很有挑战性。因为跑步已经由锻炼身体转变为比赛训练。多年前自己的第一次5千米...</p>
+					</dd>
+				</dl>
+				</div>
+				<div class="span4">
+				<dl class="dl-horizontal">
+					<dt>
+						<a href="/blog/200009168.aspx" target="_blank"><img src="http://img.erun360.com/utility/uploads/2013-12-18/100000807_095501.jpg" width="200" height="200"></a>
+					</dt>
+					<dd>
+						<a href="/blog/200009168.aspx" target="_blank" class="title" title="赛前赛后的饮食"><p>赛前赛后的饮食<p></a>
+						<span>by：<a href="/user/100002040.aspx" target="_blank"  title="运动笔记">运动笔记</a></span>
+						<p>		跑者常常不知道自己饮食的摄取量，有的人吃了太多碳水化合物，有的人水份补充太多，不当的饮食可能在长距...</p>
+					</dd>
+				</dl>
+				</div>
+				<div class="span4">
+				<dl class="dl-horizontal">
+					<dt>
+						<a href="/blog/200006019.aspx" target="_blank"><img src="http://img.erun360.com/utility/uploads/2013-12-19/100000807_100400.png" width="200" height="200"></a>
+
+					</dt>
+					<dd>
+						<a href="/blog/200005433.aspx" target="_blank" class="title" title="如何克服运动瓶颈期？">如何克服运动瓶颈期？</a>
+						<span>by：<a href="/user/100000094.aspx" target="_blank"  title="转载中心">转载中心</a></span>
+						<p>		       问：我已经在“试着要跑步”的这个階段停留了好几个月了。首先我认为我不适应跑步机。过去一个月我一个礼拜我在跑步机上花了5天时间</p>
+					</dd>
+				</dl>
+				</div>
+				<div class="span4">
+				<dl class="dl-horizontal">
+					<dt>
+						<a href="http://ball.damai.cn/483.html" target="_blank"><img src="http://i.damai.cn/fp/site/mayball/images/t6.jpg" width="200" height="200" /></a>
+
+					</dt>
+					<dd>
+						<a href="/blog/200005433.aspx" target="_blank" class="title" title="如何克服运动瓶颈期？">如何克服运动瓶颈期？</a>
+						<span>by：<a href="/user/100000094.aspx" target="_blank"  title="转载中心">转载中心</a></span>
+						<p>		       问：我已经在“试着要跑步”的这个階段停留了好几个月了。首先我认为我不适应跑步机。过去一个月我一个礼拜我在跑步机上花了5天时间</p>
+					</dd>
+				</dl>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span8">
+				<div class="navbar">
+					<div class="navbar-inner">
+						<a class="brand" href="#">赛事资讯</a>
+					</div>	
+				</div>
+				<div class="row">
+				<div class="span4">
+				<dl class="dl-horizontal">
+					<dt>
+						<a href="/blog/200006019.aspx" target="_blank"><img src="http://img.erun360.com/utility/uploads/2013-12-19/100000807_101515.jpg" width="200" height="200"></a>
+					</dt>
+					<dd>
+						<a href="/blog/200006019.aspx" target="_blank" class="title" title="第一次跑5KM必读"><p>第一次跑5KM必读<p></a>
+						<span>by：<a href="/user/100000807.aspx" target="_blank"  title="益跑天下">益跑天下</a></span>
+						<p>		要跑5千米，很令人兴奋也会很有挑战性。因为跑步已经由锻炼身体转变为比赛训练。多年前自己的第一次5千米...</p>
+					</dd>
+				</dl>
+				</div>
+				<div class="span4">
+				<dl class="dl-horizontal">
+					<dt>
+						<a href="/blog/200009168.aspx" target="_blank"><img src="http://img.erun360.com/utility/uploads/2013-12-18/100000807_095501.jpg" width="200" height="200"></a>
+					</dt>
+					<dd>
+						<a href="/blog/200009168.aspx" target="_blank" class="title" title="赛前赛后的饮食"><p>赛前赛后的饮食<p></a>
+						<span>by：<a href="/user/100002040.aspx" target="_blank"  title="运动笔记">运动笔记</a></span>
+						<p>		跑者常常不知道自己饮食的摄取量，有的人吃了太多碳水化合物，有的人水份补充太多，不当的饮食可能在长距...</p>
+					</dd>
+				</dl>
+				</div>
+				<div class="span4">
+				<dl class="dl-horizontal">
+					<dt>
+						<a href="/blog/200006019.aspx" target="_blank"><img src="http://img.erun360.com/utility/uploads/2013-12-19/100000807_100400.png" width="200" height="200"></a>
+
+					</dt>
+					<dd>
+						<a href="/blog/200005433.aspx" target="_blank" class="title" title="如何克服运动瓶颈期？">如何克服运动瓶颈期？</a>
+						<span>by：<a href="/user/100000094.aspx" target="_blank"  title="转载中心">转载中心</a></span>
+						<p>		       问：我已经在“试着要跑步”的这个階段停留了好几个月了。首先我认为我不适应跑步机。过去一个月我一个礼拜我在跑步机上花了5天时间</p>
+					</dd>
+				</dl>
+				</div>
+				<div class="span4">
+				<dl class="dl-horizontal">
+					<dt>
+						<a href="http://ball.damai.cn/483.html" target="_blank"><img src="http://i.damai.cn/fp/site/mayball/images/t6.jpg" width="200" height="200" /></a>
+
+					</dt>
+					<dd>
+						<a href="/blog/200005433.aspx" target="_blank" class="title" title="如何克服运动瓶颈期？">如何克服运动瓶颈期？</a>
+						<span>by：<a href="/user/100000094.aspx" target="_blank"  title="转载中心">转载中心</a></span>
+						<p>		       问：我已经在“试着要跑步”的这个階段停留了好几个月了。首先我认为我不适应跑步机。过去一个月我一个礼拜我在跑步机上花了5天时间</p>
+					</dd>
+				</dl>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span8">
+			</div>
+		</div>
+	</div>
+	<div class="span4">
+		<div class="row"><!-- row1 -->
+			<div class="span4">
+				<table class="table table-bordered">
+						<tr>
+							<td>
+								<%= render 'sessions/form' %>
+							</td>
+						</tr>
+				</table>
+			</div>
+		</div>
+		<div class="row"><!-- row1 -->
+			<div class="span4">
+				<table class="table table-bordered">
+						<tr>
+							<td>
+								<%= render 'sessions/form' %>
+							</td>
+						</tr>
+				</table>
+			</div>
+		</div>
+		<div class="row"><!-- row1 -->
+		</div>
+	</div>
+</div>
+<div class="row"><!-- right body-->
+	<div class="span4">
+		<div class="row"><!-- row1 -->
+		</div>
+		<div class="row"><!-- row1 -->
+		</div>
+		<div class="row"><!-- row1 -->
+		</div>
+	</div>
 </div>
 
-<div >
-<dl>
-<dt><a href="http://ball.damai.cn/483.html" target="_blank"><img src="http://i.damai.cn/fp/site/mayball/images/t6.jpg" width="221" height="147" /></a></dt>
-<dd><p>北京万芳亭羽毛球馆</p>
-<p><b>[丰台区]</b>丰台区洋桥西里甲2号</p>
-<p>门市价：￥<s>30.00</s></p>
-<p>大麦价：￥<b>25.00</b></p></dd>
-<span><a href="http://ball.damai.cn/483.html" target="_blank">立即预订</a></span>
-</dl>
-</div>
-</div>
