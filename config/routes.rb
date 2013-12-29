@@ -1,4 +1,6 @@
 Ilbdmt::Application.routes.draw do
+  resources :catalogs
+
   resources :users
 	
 	resources :sessions, only: [:new, :create, :destroy]
@@ -8,11 +10,13 @@ Ilbdmt::Application.routes.draw do
   resources :activities
 
   get "sell_tickets/home"
-  resources :pools
+  
+	resources :pools
 
   resources :games
 
   resources :matches
+
 
 	#root to: 'static_pages#page1'
 	root to: 'static_pages#home'
@@ -29,7 +33,11 @@ Ilbdmt::Application.routes.draw do
 	match '/total',			to: 'sell_tickets#total',	via: 'get'
 	match '/hfad',			to: 'sell_tickets#hfad',	via: 'get'
 
-	# The priority is based upon order of creation:
+
+	match '/badminton',	to: 'activities#badminton',	via: 'get'
+	match '/skiing',	to: 'activities#skiing',	via: 'get'
+
+# The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:

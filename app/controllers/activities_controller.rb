@@ -7,6 +7,19 @@ class ActivitiesController < ApplicationController
     @activities = Activity.all
   end
 
+	# badminton activity index
+	def badminton
+		@activities = Activity.where catalog_id: 1
+		#dont know why the following not work.undefined method `each' for 
+		#@activities = Activity.find_by catalog_id: '1'
+	end
+
+	# skiing activities index
+	def skiing
+		@activities = Activity.where catalog_id: 2
+	end
+			
+
   # GET /activities/1
   # GET /activities/1.json
   def show
@@ -69,6 +82,6 @@ class ActivitiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def activity_params
-      params.require(:activity).permit(:title, :starttime, :endtime, :quota, :signed, :place, :organizer, :contact, :description, :other)
+      params.require(:activity).permit(:title, :starttime, :endtime, :quota, :signed, :place, :organizer, :contact, :description, :other, :catalog_id)
     end
 end
