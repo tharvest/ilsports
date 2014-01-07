@@ -1,6 +1,6 @@
 #source 'http://rubygems.org'
-source 'https://rubygems.org'
-#source 'http://ruby.taobao.org'
+#source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
 
 ruby '2.0.0'
 
@@ -46,6 +46,10 @@ end
 
 # Use ActiveModel has_secure_password
  gem 'bcrypt-ruby', '3.0.1'
+
+gem 'faker', '1.1.2'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
 
 # Use unicorn as the app server
 # gem 'unicorn'
